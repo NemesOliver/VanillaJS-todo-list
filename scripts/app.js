@@ -30,7 +30,6 @@
       container.appendChild(todo);
       //give delete button a class .delete
       todo.childNodes[2].classList.add("delete");
-      console.log(todo.childNodes[2]);
     }
     //delete todos
     const delBtns = document.querySelectorAll(".delete");
