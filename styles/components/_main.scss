@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
+
   .todo {
     width: 60%;
     height: 10rem;
@@ -11,7 +14,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 3rem;
-    // remove in final stage
-    border: 1px solid black;
+    background: #f9f5fd80;
+
+    p {
+      font-size: 3.6rem;
+      color: rgb(22, 22, 22);
+    }
   }
+}
+::-webkit-scrollbar {
+  display: none;
 }

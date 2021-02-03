@@ -1,4 +1,5 @@
 header {
+  padding-top: 5rem;
   width: 100%;
   height: 25vh;
   display: -webkit-box;
@@ -18,10 +19,12 @@ header {
 
 header h1 {
   font-size: 6.4rem;
+  color: #f9f5fd;
+  text-shadow: 2px 2px #1b1b1b;
 }
 
 header .input-container {
-  width: 50%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +41,8 @@ header .input {
   padding: 0.8rem;
   border: none;
   outline: none;
-  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px #1b1b1b;
+          box-shadow: 2px 2px #1b1b1b;
 }
 
 .todo-container {
@@ -53,6 +57,8 @@ header .input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .todo-container .todo {
@@ -69,7 +75,16 @@ header .input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 3rem;
-  border: 1px solid black;
+  background: #f9f5fd80;
+}
+
+.todo-container .todo p {
+  font-size: 3.6rem;
+  color: #161616;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -86,6 +101,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 2.4rem;
+  background: url(../pexels-pixabay-210186.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .left {
