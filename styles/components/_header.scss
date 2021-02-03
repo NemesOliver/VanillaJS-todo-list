@@ -1,5 +1,4 @@
 header {
-  background: lightblue;
   width: 100%;
   height: 25vh;
   display: flex;
@@ -20,5 +19,7 @@ header {
     padding: 0.8rem;
     border: none;
     outline: none;
+    // remove border in a final project
+    border: 1px solid black;
   }
 }
