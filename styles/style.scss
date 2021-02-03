@@ -1,0 +1,29 @@
+//imports
+@import "./components/header";
+//Global styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+}
+
+.left {
+  height: 100vh;
+  width: 50%;
+}
+
+svg {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
