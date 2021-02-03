@@ -36,7 +36,12 @@
     const delBtns = document.querySelectorAll(".delete");
     delBtns.forEach((del) => {
       del.addEventListener("click", (e) => {
-        console.log(e);
+        const svg = e.target.lastElementChild;
+
+        // check if clicking on svg or svg path
+        if (svg === null || svg !== null) {
+          del.parentElement.remove();
+        }
       });
     });
   });
