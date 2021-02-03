@@ -21,7 +21,7 @@ header h1 {
 }
 
 header .input-container {
-  width: 30%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
