@@ -10,7 +10,11 @@
     fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        const location = data.location.name;
+        const date = data.location.localtime;
+        const wIcon = data.current.condition.icon;
+        const currentTemp = data.current.temp_c;
+        //const isDay = data.current.is_day;  //for later development <= checks if its a day / night
       });
     //});
   };
