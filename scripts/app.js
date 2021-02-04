@@ -44,8 +44,19 @@
       });
     });
   });
-  //api test
+  //fetch weather api
 
-  const API_KEY = "930b096a213e6f5dab494ddf33a5a869";
-  
+  const API_KEY = "f951529d4aa34e88a5520827211801";
+  const city = "Coventry";
+  const refresh = document.querySelector(".weather");
+
+  refresh.addEventListener("click", () => {
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=London`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  });
+  // fetch request status 200
+  // next => display temp data
 })();
