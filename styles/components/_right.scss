@@ -1,14 +1,26 @@
 .right {
   height: 100vh;
   width: 50%;
-
+  display: flex;
+  justify-content: flex-end;
   .time {
+    width: 50%;
     text-align: right;
     padding: 5rem 8rem;
+    display: flex;
+    align-items: center;
+    height: 15%;
+
     h2 {
       font-size: 6.4rem;
       color: #f9f5fd;
       text-shadow: 2px 2px rgb(27, 27, 27);
+      padding-left: 2.5rem;
+    }
+    button {
+      background: none;
+      border: none;
+      outline: none;
     }
   }
 }
