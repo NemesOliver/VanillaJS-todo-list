@@ -26,7 +26,6 @@
       });
   };
   getWeather();
-  //setInterval(updateTime, 1);
   // 1.get user input
   const addBtn = document.querySelector(".add");
   const inputField = document.querySelector(".input");
@@ -89,7 +88,6 @@
       toStr += "am";
     }
     displayTime.value = toStr;
-    console.log("ok");
   };
   //update every minute
   updateTime();
