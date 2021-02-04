@@ -98,9 +98,10 @@ header .input {
           justify-content: flex-end;
 }
 
-.right .time {
+.right .weather-container {
   width: 50%;
   text-align: right;
+  margin-top: 3rem;
   padding: 5rem 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,17 +112,39 @@ header .input {
   height: 15%;
 }
 
-.right .time h2 {
+.right .weather-container h2 {
   font-size: 6.4rem;
   color: #f9f5fd;
   text-shadow: 2px 2px #1b1b1b;
   padding-left: 2.5rem;
 }
 
-.right .time button {
+.right .weather-container button {
   background: none;
   border: none;
   outline: none;
+}
+
+.right .weather-container img {
+  padding: 0 4rem;
+}
+
+.right .weather-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right .weather-container p {
+  color: #f9f5fd;
+  text-shadow: 2px 2px #1b1b1b;
 }
 
 * {

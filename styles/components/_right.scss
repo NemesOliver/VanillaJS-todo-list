@@ -3,9 +3,10 @@
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  .time {
+  .weather-container {
     width: 50%;
     text-align: right;
+    margin-top: 3rem;
     padding: 5rem 8rem;
     display: flex;
     align-items: center;
@@ -21,6 +22,18 @@
       background: none;
       border: none;
       outline: none;
+    }
+    img {
+      padding: 0 4rem;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      color: #f9f5fd;
+      text-shadow: 2px 2px rgb(27, 27, 27);
     }
   }
 }

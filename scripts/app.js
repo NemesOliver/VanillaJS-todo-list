@@ -1,4 +1,20 @@
 (function () {
+  const getWeather = () => {
+    //fetch weather api
+
+    const API_KEY = "f951529d4aa34e88a5520827211801";
+    const city = "Coventry";
+    //const refresh = document.querySelector(".weather");
+
+    // refresh.addEventListener("click", () => {
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+    //});
+  };
+  getWeather();
   // 1.get user input
   const addBtn = document.querySelector(".add");
   const inputField = document.querySelector(".input");
@@ -44,19 +60,4 @@
       });
     });
   });
-  //fetch weather api
-
-  const API_KEY = "f951529d4aa34e88a5520827211801";
-  const city = "Coventry";
-  const refresh = document.querySelector(".weather");
-
-  refresh.addEventListener("click", () => {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=London`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-  });
-  // fetch request status 200
-  // next => display temp data
 })();
