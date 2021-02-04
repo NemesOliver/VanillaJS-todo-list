@@ -87,6 +87,22 @@ header .input {
   display: none;
 }
 
+.right {
+  height: 100vh;
+  width: 50%;
+}
+
+.right .time {
+  text-align: right;
+  padding: 5rem 8rem;
+}
+
+.right .time h2 {
+  font-size: 6.4rem;
+  color: #f9f5fd;
+  text-shadow: 2px 2px #1b1b1b;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -120,5 +136,11 @@ svg {
 svg:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

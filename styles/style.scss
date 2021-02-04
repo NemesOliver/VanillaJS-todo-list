@@ -1,6 +1,7 @@
 //imports
 @import "./components/header";
 @import "./components/main";
+@import "./components/right";
 
 //Global styles
 * {
@@ -30,4 +31,7 @@ svg {
   &:hover {
     transform: scale(1.1);
   }
+}
+.container {
+  display: flex;
 }
