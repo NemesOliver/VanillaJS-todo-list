@@ -9,7 +9,6 @@
       .then((res) => res.json())
       .then((data) => {
         const location = data.location.name;
-        const date = data.location.localtime;
         const wIcon = data.current.condition.icon;
         const currentTemp = data.current.temp_c;
         //const isDay = data.current.is_day;  //for later development <= checks if its a day / night
@@ -21,14 +20,13 @@
         <div class="info">
           <p>${location}</p>
           <h2>${currentTemp}°C</h2>
-          <p>${date}</p>
-        </div>`;
+          </div>`;
         const right = document.querySelector(".right");
         right.appendChild(weatherDiv);
       });
   };
   getWeather();
-
+  //setInterval(updateTime, 1);
   // 1.get user input
   const addBtn = document.querySelector(".add");
   const inputField = document.querySelector(".input");
@@ -74,4 +72,26 @@
       });
     });
   });
+  //Get time
+  const displayTime = document.querySelector(".time-input");
+
+  const updateTime = () => {
+    const date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    let toStr = hours + ":" + minutes + " ";
+    if (hours > 11) {
+      toStr += "pm";
+    } else {
+      toStr += "am";
+    }
+    displayTime.value = toStr;
+    console.log("ok");
+  };
+  //update every minute
+  updateTime();
+  setInterval(updateTime, 10000);
 })();

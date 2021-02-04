@@ -34,6 +34,25 @@
     p {
       color: #f9f5fd;
       text-shadow: 2px 2px rgb(27, 27, 27);
+      font-size: 3rem;
     }
+  }
+}
+.time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4rem 4rem;
+  .time-input {
+    padding: 2rem 3rem;
+    font-size: 8rem;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    color: #f9f5fd;
+    text-shadow: 2px 2px rgb(27, 27, 27);
+    text-align: right;
+    pointer-events: none;
   }
 }
