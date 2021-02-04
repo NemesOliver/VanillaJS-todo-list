@@ -4,9 +4,7 @@
 
     const API_KEY = "f951529d4aa34e88a5520827211801";
     const city = "Coventry";
-    //const refresh = document.querySelector(".weather");
 
-    // refresh.addEventListener("click", () => {
     fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
       .then((res) => res.json())
       .then((data) => {
@@ -15,10 +13,22 @@
         const wIcon = data.current.condition.icon;
         const currentTemp = data.current.temp_c;
         //const isDay = data.current.is_day;  //for later development <= checks if its a day / night
+
+        const weatherDiv = document.createElement("div");
+        weatherDiv.classList.add("weather-container");
+        weatherDiv.innerHTML = `
+        <img src="${wIcon}" alt="icon"/>
+        <div class="info">
+          <p>${location}</p>
+          <h2>${currentTemp}°C</h2>
+          <p>${date}</p>
+        </div>`;
+        const right = document.querySelector(".right");
+        right.appendChild(weatherDiv);
       });
-    //});
   };
   getWeather();
+
   // 1.get user input
   const addBtn = document.querySelector(".add");
   const inputField = document.querySelector(".input");
