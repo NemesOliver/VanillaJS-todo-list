@@ -6,6 +6,6 @@
 
 ## Instructions
 
-- Weather data is fetched from https://openweathermap.org/
-- Sign in and get api key here: https://home.openweathermap.org/users/sign_up
-- Find current weather api documentation here: https://openweathermap.org/current
+- Weather data is fetched from <https://openweathermap.org/>
+- Sign in and get api key here: <https://home.openweathermap.org/users/sign_up>
+- Find current weather api documentation here: <https://openweathermap.org/current>
