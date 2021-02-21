@@ -2,8 +2,8 @@
   const getWeather = () => {
     //fetch weather api
 
-    const API_KEY = "f951529d4aa34e88a5520827211801";
-    const city = "Coventry";
+    const API_KEY = "YOUR_API_KEY_HERE";
+    const city = "YOUR_CITY_HERE";
 
     fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
       .then((res) => res.json())
